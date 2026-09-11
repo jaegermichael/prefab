@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+.impeccable/review/
+.impeccable/vite.log
+.impeccable/capture.mjs
+
+*.log
+.DS_Store
+Thumbs.db

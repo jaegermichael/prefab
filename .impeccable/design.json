@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-11T08:17:31Z",
+  "title": "Design System: Prefab Zimbabwe",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Charcoal Ink" },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Charcoal" },
+      "paper": { "role": "neutral", "displayName": "Chalk Paper" },
+      "paper-raised": { "role": "neutral", "displayName": "Raised Chalk" },
+      "steel": { "role": "neutral", "displayName": "Galvanized Steel" },
+      "line": { "role": "neutral", "displayName": "Steel Line" },
+      "accent": { "role": "primary", "displayName": "Safety Orange" },
+      "accent-ink": { "role": "neutral", "displayName": "Orange Sign Ink" },
+      "on-dark": { "role": "neutral", "displayName": "On-Dark Chalk" },
+      "on-dark-soft": { "role": "neutral", "displayName": "On-Dark Soft" },
+      "dark-panel": { "role": "neutral", "displayName": "Dark Structural Panel" },
+      "system-dark-ink": { "role": "neutral", "displayName": "System Dark Chalk" },
+      "system-dark-ink-soft": { "role": "neutral", "displayName": "System Dark Soft Chalk" },
+      "system-dark-paper": { "role": "neutral", "displayName": "System Dark Canvas" },
+      "system-dark-paper-raised": { "role": "neutral", "displayName": "System Dark Raised" },
+      "system-dark-steel": { "role": "neutral", "displayName": "System Dark Steel" },
+      "system-dark-line": { "role": "neutral", "displayName": "System Dark Line" },
+      "system-dark-panel": { "role": "neutral", "displayName": "System Dark Deep Panel" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Compressed uppercase hero statements." },
+      "headline": { "displayName": "Headline", "purpose": "Major uppercase section statements." },
+      "price": { "displayName": "Price", "purpose": "Exact selected prices and prominent board figures." },
+      "body": { "displayName": "Body", "purpose": "Descriptions, details, and commercial notes." },
+      "lead": { "displayName": "Lead", "purpose": "Section introductions and positioning copy." },
+      "button": { "displayName": "Button", "purpose": "Short, direct conversion and navigation actions." },
+      "label": { "displayName": "Utility Label", "purpose": "Uppercase price qualifiers and compact metadata." }
+    },
+    "shadows": [
+      { "name": "price-ticket", "value": "0 22px 50px rgba(79, 37, 19, .24)", "purpose": "Lift the overlapping hero entry-price marker." },
+      { "name": "model-panel", "value": "0 24px 60px rgba(53, 60, 51, .09)", "purpose": "Separate the complete selector assembly from the page." },
+      { "name": "selected-variant", "value": "0 9px 28px rgba(42, 49, 41, .12)", "purpose": "Lift only the currently selected quote row." },
+      { "name": "location-marker", "value": "0 18px 42px rgba(105, 52, 31, .25)", "purpose": "Focus the orange Harare marker over the steel map field." },
+      { "name": "mobile-enquiry", "value": "0 14px 40px rgba(52, 29, 20, .28)", "purpose": "Keep the fixed mobile WhatsApp action legible over content." }
+    ],
+    "motion": [
+      { "name": "ease-expressive", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "All authored hover, press, and entrance transitions." },
+      { "name": "state-transition", "value": "250ms", "purpose": "Color and transform transitions for controls and links." },
+      { "name": "price-entry", "value": "900ms", "purpose": "Hero price ticket entrance from 24px below with 2deg rotation and opacity." },
+      { "name": "reduced-motion", "value": "0.01ms; 1 iteration", "purpose": "Effectively remove animations and transitions when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "selector-collapse", "value": "1050px" },
+      { "name": "mobile", "value": "767px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The safety-orange conversion action used for prices, delivery, and WhatsApp.",
+      "html": "<button class=\"ds-button-primary\">VIEW PRICES <span aria-hidden=\"true\">→</span></button>",
+      "css": ".ds-button-primary { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 9px; padding: 0 20px; background: var(--accent, #f15a24); color: var(--accent-ink, #171916); font: 800 14px 'Manrope', system-ui, sans-serif; cursor: pointer; transition: transform .25s cubic-bezier(.16, 1, .3, 1), background .25s cubic-bezier(.16, 1, .3, 1), color .25s cubic-bezier(.16, 1, .3, 1); } .ds-button-primary:hover { background: #10120f; color: #f4f5ef; transform: translateY(-2px); } .ds-button-primary:active { transform: translateY(1px); } .ds-button-primary:focus-visible { outline: 3px solid var(--accent, #f15a24); outline-offset: 4px; } @media (prefers-reduced-motion: reduce) { .ds-button-primary { transition-duration: .01ms; } }"
+    },
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "The dark action placed inside orange quote tickets.",
+      "html": "<button class=\"ds-button-dark\">ENQUIRE NOW</button>",
+      "css": ".ds-button-dark { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 9px; padding: 0 20px; background: var(--ink, #171916); color: var(--on-dark, #f4f5ef); font: 800 14px 'Manrope', system-ui, sans-serif; cursor: pointer; transition: transform .25s cubic-bezier(.16, 1, .3, 1), background .25s cubic-bezier(.16, 1, .3, 1), color .25s cubic-bezier(.16, 1, .3, 1); } .ds-button-dark:hover { background: var(--paper-raised, #fafbf7); color: var(--ink, #171916); transform: translateY(-2px); } .ds-button-dark:active { transform: translateY(1px); } .ds-button-dark:focus-visible { outline: 3px solid var(--accent, #f15a24); outline-offset: 4px; } @media (prefers-reduced-motion: reduce) { .ds-button-dark { transition-duration: .01ms; } }"
+    },
+    {
+      "name": "Header Action",
+      "kind": "nav",
+      "description": "Compact dark WhatsApp action that becomes icon-only on mobile.",
+      "html": "<a class=\"ds-header-action\" href=\"#\"><span aria-hidden=\"true\">●</span><span class=\"ds-header-label\">WhatsApp us</span></a>",
+      "css": ".ds-header-action { display: inline-flex; align-items: center; gap: 8px; padding: 11px 16px; border-radius: 8px; background: var(--ink, #171916); color: var(--on-dark, #f4f5ef); font: 700 14px 'Manrope', system-ui, sans-serif; text-decoration: none; transition: transform .25s cubic-bezier(.16, 1, .3, 1), background .25s cubic-bezier(.16, 1, .3, 1); } .ds-header-action:hover { background: var(--accent, #f15a24); color: var(--accent-ink, #171916); transform: translateY(-2px); } .ds-header-action:active { transform: translateY(1px); } .ds-header-action:focus-visible { outline: 3px solid var(--accent, #f15a24); outline-offset: 4px; } @media (max-width: 767px) { .ds-header-action { padding: 11px; } .ds-header-label { display: none; } } @media (prefers-reduced-motion: reduce) { .ds-header-action { transition-duration: .01ms; } }"
+    },
+    {
+      "name": "Model Tab",
+      "kind": "chip",
+      "refersTo": "model-tab",
+      "description": "Scrollable configuration control showing a label and starting price.",
+      "html": "<button class=\"ds-model-tab\" aria-pressed=\"true\"><span>2 Bedroom</span><small>from $10,000</small></button>",
+      "css": ".ds-model-tab { min-width: 145px; padding: 16px 14px; border: 1px solid var(--line, #b8bcb5); border-radius: 10px; background: transparent; color: var(--ink, #171916); text-align: left; font-family: 'Manrope', system-ui, sans-serif; cursor: pointer; transition: transform .25s cubic-bezier(.16, 1, .3, 1), background .25s cubic-bezier(.16, 1, .3, 1), color .25s cubic-bezier(.16, 1, .3, 1); } .ds-model-tab span, .ds-model-tab small { display: block; } .ds-model-tab span { font-weight: 800; } .ds-model-tab small { margin-top: 5px; opacity: .67; font-size: 11px; } .ds-model-tab:hover { transform: translateY(-3px); } .ds-model-tab[aria-pressed='true'] { border-color: var(--ink, #171916); background: var(--ink, #171916); color: var(--on-dark, #f4f5ef); } .ds-model-tab:focus-visible { outline: 3px solid var(--accent, #f15a24); outline-offset: 4px; } @media (prefers-color-scheme: dark) { .ds-model-tab[aria-pressed='true'] { border-color: #f1f2ec; background: #f1f2ec; color: #171916; } } @media (max-width: 767px) { .ds-model-tab { min-width: 135px; } } @media (prefers-reduced-motion: reduce) { .ds-model-tab { transition-duration: .01ms; } }"
+    },
+    {
+      "name": "Selected Variant Row",
+      "kind": "custom",
+      "refersTo": "variant-row",
+      "description": "A tactile quote row with selection check, model detail, and exact price.",
+      "html": "<button class=\"ds-variant\" aria-pressed=\"true\"><span class=\"ds-variant-check\">✓</span><span class=\"ds-variant-name\"><strong>2 bedroom, furnished</strong><small>Kitchen sink, ensuite, wardrobes and tiles</small></span><strong class=\"ds-variant-price\">$12,000</strong></button>",
+      "css": ".ds-variant { width: 100%; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; padding: 17px; border: 0; border-radius: 10px; background: var(--paper-raised, #fafbf7); color: var(--ink, #171916); box-shadow: 0 9px 28px rgba(42, 49, 41, .12); text-align: left; font-family: 'Manrope', system-ui, sans-serif; cursor: pointer; transition: transform .25s cubic-bezier(.16, 1, .3, 1), background .25s cubic-bezier(.16, 1, .3, 1); } .ds-variant:hover { transform: translateX(4px); } .ds-variant-check { width: 26px; height: 26px; display: grid; place-items: center; border: 1px solid var(--accent, #f15a24); border-radius: 7px; background: var(--accent, #f15a24); color: var(--accent-ink, #171916); font-weight: 800; } .ds-variant-name strong, .ds-variant-name small { display: block; } .ds-variant-name strong { font-size: 14px; } .ds-variant-name small { margin-top: 4px; color: var(--ink-soft, #4c514b); font-size: 11px; } .ds-variant-price { font: 400 18px 'Archivo Black', sans-serif; white-space: nowrap; } .ds-variant:focus-visible { outline: 3px solid var(--accent, #f15a24); outline-offset: 4px; } @media (prefers-color-scheme: dark) { .ds-variant { background: #292d28; } } @media (max-width: 767px) { .ds-variant { gap: 10px; padding: 14px 12px; } .ds-variant-price { font-size: 15px; } } @media (prefers-reduced-motion: reduce) { .ds-variant { transition-duration: .01ms; } }"
+    },
+    {
+      "name": "Enquiry Ticket",
+      "kind": "card",
+      "refersTo": "enquiry-ticket",
+      "description": "Safety-orange quote summary coupling the active model, price, exclusions, and enquiry action.",
+      "html": "<aside class=\"ds-ticket\"><span>YOUR SELECTION</span><h3>2 bedroom, furnished</h3><strong>$12,000</strong><p>VAT exclusive. Transport outside Harare is quoted separately.</p><button>ENQUIRE NOW</button></aside>",
+      "css": ".ds-ticket { width: 320px; display: flex; flex-direction: column; padding: 40px; background: var(--accent, #f15a24); color: var(--accent-ink, #171916); font-family: 'Manrope', system-ui, sans-serif; } .ds-ticket > span { font-size: 11px; font-weight: 800; letter-spacing: .1em; } .ds-ticket h3 { margin: 36px 0 10px; font-size: 22px; } .ds-ticket > strong { font: 400 42px 'Archivo Black', sans-serif; letter-spacing: -.04em; } .ds-ticket p { margin: 14px 0 28px; font-size: 12px; line-height: 1.55; opacity: .84; } .ds-ticket button { min-height: 50px; border: 0; border-radius: 9px; padding: 0 20px; background: var(--ink, #171916); color: var(--on-dark, #f4f5ef); font: 800 14px 'Manrope', system-ui, sans-serif; cursor: pointer; transition: transform .25s cubic-bezier(.16, 1, .3, 1), background .25s cubic-bezier(.16, 1, .3, 1), color .25s cubic-bezier(.16, 1, .3, 1); } .ds-ticket button:hover { background: var(--paper-raised, #fafbf7); color: var(--ink, #171916); transform: translateY(-2px); } .ds-ticket button:focus-visible { outline: 3px solid var(--accent, #f15a24); outline-offset: 4px; } @media (max-width: 767px) { .ds-ticket { width: auto; padding: 28px; } .ds-ticket h3 { margin: 26px 0 6px; } .ds-ticket > strong { font-size: 36px; } } @media (prefers-reduced-motion: reduce) { .ds-ticket button { transition-duration: .01ms; } }"
+    },
+    {
+      "name": "Complete Price Group",
+      "kind": "custom",
+      "description": "A compact price-board group with orange category, material notes, and aligned Archivo prices.",
+      "html": "<article class=\"ds-price-group\"><button><span>3 Bedroom</span><small>CUSTOMIZE THIS LAYOUT →</small></button><p><span><strong>3 bedroom, furnished</strong><small>Kitchen sink, ensuite, wardrobes and tiles</small></span><b>$15,000</b></p></article>",
+      "css": ".ds-price-group { width: 460px; padding: 0 0 30px; border-bottom: 1px solid #3c413b; background: var(--ink, #171916); color: var(--on-dark, #f4f5ef); font-family: 'Manrope', system-ui, sans-serif; } .ds-price-group > button { width: 100%; min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0; border: 0; background: transparent; color: inherit; text-align: left; cursor: pointer; } .ds-price-group > button > span { color: var(--accent, #f15a24); font-size: 20px; font-weight: 800; } .ds-price-group > button small { color: var(--on-dark-soft, #b8beb6); font-weight: 700; } .ds-price-group p { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: start; margin: 17px 0 0; } .ds-price-group p span strong, .ds-price-group p span small { display: block; } .ds-price-group p span strong { font-size: 13px; } .ds-price-group p span small { margin-top: 4px; color: var(--on-dark-soft, #b8beb6); font-size: 10px; line-height: 1.45; } .ds-price-group p b { font: 400 15px 'Archivo Black', sans-serif; white-space: nowrap; } .ds-price-group button:focus-visible { outline: 3px solid var(--accent, #f15a24); outline-offset: 4px; } @media (max-width: 767px) { .ds-price-group { width: 100%; padding-bottom: 22px; } .ds-price-group > button small { display: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Builders' Price Board",
+    "overview": "Prefab Zimbabwe lives in the visual world of a trusted builders' merchant: charcoal-painted steel, galvanized panels, chalk-white labels, and a single safety-orange signal color. The system is practical, explicit, and tactile. It makes dimensions, inclusions, exclusions, and USD prices feel like stock information posted for immediate comparison rather than luxury property marketing hidden behind an enquiry form.\n\nLarge compressed headlines establish strength while disciplined Manrope text keeps dense commercial information readable. Photography is treated as material evidence, with steel-grey offsets, restrained saturation, and occasional orange blocks. The implementation is approved to ship; future work should preserve this direct, workmanlike confidence rather than polishing it into a generic villa aesthetic.",
+    "keyCharacteristics": [
+      "Builders' merchant price-board clarity",
+      "Charcoal, galvanized grey, chalk, and safety orange",
+      "Compressed uppercase display type with workhorse body text",
+      "Broad, calm sections around dense price-comparison modules",
+      "Tonal depth first, shadows only for lifted commercial signals",
+      "Native system dark mode and decisive mobile collapse"
+    ],
+    "rules": [
+      { "name": "The One Safety Signal Rule", "body": "Safety orange is the only accent; do not introduce competing brand colors or repurpose it as a large ambient background outside price, action, selection, and location moments.", "section": "colors" },
+      { "name": "The Material Contrast Rule", "body": "Build hierarchy with charcoal, chalk, galvanized grey, and borders before reaching for shadow.", "section": "colors" },
+      { "name": "The Signboard Hierarchy Rule", "body": "Use Archivo Black only where a builders' sign would use its loudest ink: major statements, board headings, and prices. Keep explanatory copy in Manrope.", "section": "typography" },
+      { "name": "The Short Headline Rule", "body": "Preserve compact line breaks and tight measures; display copy should read as stacked signage, not wrap into a paragraph.", "section": "typography" },
+      { "name": "The Wide Air, Dense Board Rule", "body": "Keep generous space between sections, but let selectors and price lists remain compact enough for fast commercial scanning.", "section": "layout" },
+      { "name": "The Mobile Collapse Rule", "body": "Recompose into one column; do not merely shrink desktop grids. Preserve prices, exclusions, and a model-specific WhatsApp action in the primary reading path.", "section": "layout" },
+      { "name": "The Structural Shadow Rule", "body": "Do not shadow ordinary cards or text blocks. Apply shadow only to a current selection, overlapping price marker, map marker, or fixed conversion control.", "section": "elevation" },
+      { "name": "The Chamfered, Not Cushioned Rule", "body": "Corners may soften a steel form, but they must never make the interface feel playful or inflated.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do make exact USD pricing, VAT exclusion, and transport terms visible at the point of comparison.",
+      "Do use safety orange for price, selection, location, and primary action moments.",
+      "Do pair broad section spacing with compact 8–28px rhythms inside commercial controls.",
+      "Do keep primary surfaces at 14px and step controls down through 10px, 9px, 8px, and 7px.",
+      "Do preserve model-specific WhatsApp context when a selection changes.",
+      "Do honor system dark mode and reduced-motion preferences without removing information.",
+      "Do collapse multi-column compositions into deliberate single-column mobile flows below 768px."
+    ],
+    "donts": [
+      "Don't hide prices behind forms, modals, or enquiry-only calls to action.",
+      "Don't introduce luxury-villa styling, polished gold accents, gradients, glassmorphism, or unsupported lifestyle claims.",
+      "Don't add competing accent colors, rounded pills, bubbly cards, or deep nested containers.",
+      "Don't use Archivo Black for explanatory paragraphs or long labels.",
+      "Don't shadow every panel; reserve lift for selected, overlapping, mapped, or fixed elements.",
+      "Don't let mobile collapse remove prices, exclusions, variant notes, or the direct enquiry path."
+    ]
+  }
+}
