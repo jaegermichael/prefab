@@ -12,11 +12,11 @@ Proof: Supplied dimensions, exact VAT-exclusive pricing, furnishing inclusions, 
 
 THESIS: Treat the catalog like a trusted builders' merchant price board where every figure is immediate and every configuration feels tangible. Refuse the polished luxury-villa template that hides price behind enquiry forms.
 
-OWN-WORLD: Charcoal steel, chalk-white labels, galvanized grey panels, and one safety-orange accent. Condensed display typography meets clean workhorse body type. Corners are square to softly chamfered, never bubbly.
+OWN-WORLD: Deep solar-panel blue, clean white labels, cool galvanized panels, Zimbabwe green actions, and restrained lime highlights drawn from the supplied Movable Homes identity. Condensed display typography meets clean workhorse body type. Corners are square to softly chamfered, never bubbly.
 
 STORY: The visitor sees the offer and entry price, understands construction and delivery benefits, compares all configurations, checks exclusions, and starts one model-specific WhatsApp enquiry.
 
-FIRST VIEWPORT: A left-weighted headline and action sit beside a large prefab-home photograph. An orange USD 2,800 price block overlaps the image edge, making the starting point unmistakable. The navigation remains compact and the action is visible without scrolling.
+FIRST VIEWPORT: A left-weighted headline and action sit beside a large prefab-home photograph. A green USD 2,800 price block overlaps the image edge, making the starting point unmistakable, while a lime offset ties the image to the supplied identity. The navigation remains compact and the action is visible without scrolling.
 
 FORM: Builders' merchant price board, the fifth grounded direction assigned by seed dee301fa. The signature interaction is a configuration selector that updates the WhatsApp message without hiding the full catalog.
 
